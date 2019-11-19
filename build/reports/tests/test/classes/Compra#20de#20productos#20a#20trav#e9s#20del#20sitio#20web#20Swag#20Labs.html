@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Compra de productos a través del sitio web Swag Labs</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Compra de productos a través del sitio web Swag Labs</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Compra de productos a través del sitio web Swag Labs</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m4.27s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Realizar un proceso completo de compra"></a>
+<h3 class="failures">Realizar un proceso completo de compra</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expected: &quot;89.97&quot;
+     but: was &quot;79.96&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:231)
+	at com.saucedemo.stepdefinitions.CompraProductosStepDefinition.enPantallaSeIndicaraElValorNetoAPagar(CompraProductosStepDefinition.java:67)
+	at ✽.en pantalla se indicará un valor neto a pagar de 89.97(src/test/resources/features/compra_productos.feature:16)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Realizar un proceso completo de compra</td>
+<td class="success">23.949s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Realizar un proceso completo de compra</td>
+<td class="success">26.515s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Realizar un proceso completo de compra</td>
+<td class="failures">13.810s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given que John ingresó al sitio web Swag Labs con usuario standard_user y contraseña secret_sauce
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John opens the Login page
+nov 16, 2019 6:10:00 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 12037
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+nov 16, 2019 6:10:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John enters 'standard_user' into el campo nombre de usuario
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John enters 'secret_sauce' into el campo clave
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el boton login
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When agregue al carrito de compras los productos
+| Sauce Labs Backpack |
+| Sauce Labs Fleece Jacket |
+| Sauce Labs Bike Light |
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón agregar del producto Sauce Labs Backpack
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón agregar del producto Sauce Labs Fleece Jacket
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón agregar del producto Sauce Labs Bike Light
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón carrito de compras
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And realice el checkout
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón checkout
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And digite nombre completo John Clavijo y codigo postal 500050
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John enters 'John' into el campo nombre
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John enters 'Clavijo' into el campo apellido
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John enters '500050' into el campo código postal
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón continuar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then en pantalla se indicará un valor neto a pagar de 89.97
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then factura should be '89.97'
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And se mostrará el mensaje THANK YOU FOR YOUR ORDER al confirmar la compra
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP John clicks on el botón confirmar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then mensaje should be 'THANK YOU FOR YOUR ORDER'
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Realizar un proceso completo de compra
+----------------------------------------------------------------------------?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given que Fredy ingresó al sitio web Swag Labs con usuario problem_user y contraseña secret_sauce
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy opens the Login page
+nov 16, 2019 6:10:26 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+nov 16, 2019 6:10:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy enters 'problem_user' into el campo nombre de usuario
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy enters 'secret_sauce' into el campo clave
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el boton login
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When agregue al carrito de compras los productos
+| Sauce Labs Backpack |
+| Sauce Labs Fleece Jacket |
+| Sauce Labs Bike Light |
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el botón agregar del producto Sauce Labs Backpack
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el botón agregar del producto Sauce Labs Fleece Jacket
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el botón agregar del producto Sauce Labs Bike Light
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el botón carrito de compras
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And realice el checkout
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el botón checkout
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And digite nombre completo Fredy Parra y codigo postal 100010
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy enters 'Fredy' into el campo nombre
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy enters 'Parra' into el campo apellido
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy enters '100010' into el campo código postal
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Fredy clicks on el botón continuar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then en pantalla se indicará un valor neto a pagar de 89.97
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then factura should be '89.97'
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: java.lang.AssertionError: 
+Expected: &quot;89.97&quot;
+     but: was &quot;79.96&quot;?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: java.lang.AssertionError: 
+Expected: &quot;89.97&quot;
+     but: was &quot;79.96&quot;?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And se mostrará el mensaje THANK YOU FOR YOUR ORDER al confirmar la compra
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[33mIGNORING STEP?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[91mSTEP FAILURE: java.lang.AssertionError: 
+Expected: &quot;89.97&quot;
+     but: was &quot;79.96&quot;?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Realizar un proceso completo de compra
+--------------------------------------------------------------------------?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Then factura should be '89.97'?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: &quot;89.97&quot; but: was &quot;79.96&quot;
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given que Aldo ingresó al sitio web Swag Labs con usuario performance_glitch_user y contraseña secret_sauce
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo opens the Login page
+nov 16, 2019 6:10:40 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+nov 16, 2019 6:10:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo enters 'performance_glitch_user' into el campo nombre de usuario
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo enters 'secret_sauce' into el campo clave
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el boton login
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When agregue al carrito de compras los productos
+| Sauce Labs Backpack |
+| Sauce Labs Fleece Jacket |
+| Sauce Labs Bike Light |
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón agregar del producto Sauce Labs Backpack
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón agregar del producto Sauce Labs Fleece Jacket
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón agregar del producto Sauce Labs Bike Light
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón carrito de compras
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And realice el checkout
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón checkout
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And digite nombre completo Aldo Pistolas y codigo postal 200002
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo enters 'Aldo' into el campo nombre
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo enters 'Pistolas' into el campo apellido
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo enters '200002' into el campo código postal
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón continuar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then en pantalla se indicará un valor neto a pagar de 89.97
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then factura should be '89.97'
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And se mostrará el mensaje THANK YOU FOR YOUR ORDER al confirmar la compra
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Aldo clicks on el botón confirmar
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then mensaje should be 'THANK YOU FOR YOUR ORDER'
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Realizar un proceso completo de compra
+--------------------------------------------------------------------------?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Then factura should be '89.97'?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: &quot;89.97&quot; but: was &quot;79.96&quot;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.9</a> at 16/11/2019 06:11:04 PM</p>
+</div>
+</div>
+</body>
+</html>
